@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <span class="time-hr">00</span>
+            <span>:</span>
+            <span class="time-min">00</span>
+            <span>:</span>
+            <span class="time-sec">00</span>
+            <span>:</span>
+            <span class="time-msec">00</span>
+        </div>
+        <div class="laps"></div>
+        <div class="buttons">
+            <button class="btn laps hidden"><i class="fa-solid fa-flag"></i></button>
+            <button class="btn reset hidden"><i class="fa-solid fa-stop"></i></button>
+            <button class="btn play"><i class="fa-solid fa-play"></i></button>
+            <button class="btn pause hidden"><i class="fa-solid fa-pause"></i></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
