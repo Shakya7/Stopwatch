@@ -10,6 +10,7 @@ body{
     height:100vh;
     display:flex;
     justify-content: center;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .container{
@@ -42,6 +43,41 @@ body{
     align-items: center;
 }
 
+.laps{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    width: 60%;
+    height: 40%;
+    overflow: scroll;
+    color:rgb(102, 97, 97);
+}
+.laps::-webkit-scrollbar{
+    display: none;
+}
+
+.lap{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    transition: display 0.3s ease-in-out;
+    color:azure;
+}
+
+.lap-left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.toggle{
+    font-family: "Ubuntu";
+    color:rgb(63, 60, 60);
+    align-self: flex-start;
+    position: relative;
+    top:-30px;
+    left:10px;
+}
 .hidden{
     display:none;
 }
@@ -49,6 +85,22 @@ body{
 @media screen and (max-width:615px){
     .time{
         font-size: 13vw;
+    }
+}
+
+@media screen and (max-width:460px){
+    .laps{
+        width:90%;
+    }
+    .toggle{
+        font-size: 5vw;
+    }
+    
+}
+
+@media screen and (max-width:311px){
+    .lap{
+        font-size: 5vw;
     }
 }
 
